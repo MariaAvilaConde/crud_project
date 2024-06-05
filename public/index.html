@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CRUD App</h1>
+    <form id="user-form">
+      <input type="text" id="name" placeholder="Nombre" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <button type="submit">Agregar Usuario</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="user-table-body">
+        <!-- Aquí se insertarán las filas de la tabla -->
+      </tbody>
+    </table>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
